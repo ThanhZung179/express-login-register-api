@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "express-login-register-api",
+  "builds": [
+    { "src": "index.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/index.js" }
+  ]
+}
